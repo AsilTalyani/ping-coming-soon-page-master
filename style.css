@@ -27,6 +27,7 @@ body {
 .header {
   width: 100%;
   height: 300px;
+  background: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,6 +54,11 @@ body {
   color: grey;
   font-weight: 300;
   padding-top: 1rem;
+}
+
+.header .input-con {
+  height: 125px;
+  width: 400px;
 }
 
 .header .input {
@@ -173,9 +179,9 @@ body {
   display: flex;
   -ms-flex-line-pack: center;
       align-content: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .socio {
@@ -183,6 +189,7 @@ body {
   height: 50px;
   background: white;
   margin-top: 30px;
+  margin-right: 1rem;
   border-radius: 55px;
   border: 1px solid #c2d3ff;
   display: -webkit-box;
@@ -217,7 +224,6 @@ body {
   width: 80%;
   height: 20px;
   border-radius: 3px;
-  margin-top: 10px;
   text-align: center;
 }
 
@@ -233,7 +239,6 @@ body {
   width: 80%;
   height: 20px;
   border-radius: 3px;
-  margin-top: 10px;
   text-align: center;
 }
 
@@ -248,6 +253,25 @@ body {
   .illustration img {
     width: auto;
     height: 450px;
+  }
+  .header .input-con {
+    height: 100px;
+    width: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .header .input {
+    width: 400px;
+    margin-left: 20px;
+  }
+  .header button {
+    width: 150px;
+    margin-top: 15px;
+    margin-left: 10px;
   }
 }
 
@@ -266,6 +290,20 @@ body {
     width: auto;
     height: 200px;
   }
+  .illustration .input {
+    width: 300px;
+    height: 40px;
+    font-size: 18px;
+  }
+  .illustration .input input {
+    width: 90%;
+    font-size: 15px;
+  }
+  .illustration button {
+    width: 300px;
+    height: 40px;
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 375px) {
@@ -278,13 +316,26 @@ body {
   }
   .header h1 {
     font-size: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .input {
-    width: 200px;
+  .header .input {
+    width: 300px;
     height: 40px;
+    font-size: 18px;
   }
-  .input input {
-    width: 100%;
+  .header .input input {
+    width: 90%;
+    font-size: 15px;
+  }
+  .header button {
+    width: 300px;
+    height: 40px;
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=style.css.map */
