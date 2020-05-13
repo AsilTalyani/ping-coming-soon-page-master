@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: "Libre Franklin";
+}
+    .logo{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2rem;
+        
+    }
+    .header{
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1{
+            padding-top: 2rem;
+            font-size: 34px;
+        }
+        span{
+            color: grey;
+            font-weight: 300;
+        }
+        h4{
+            color: grey;
+            font-weight: 300;
+            padding-top: 1rem;
+        }
+       
+        .input{
+            border: 1px solid hsl(223, 100%, 88%);
+            width: 400px;
+            height: 50px;
+            border-radius: 55px;
+            font-size: 23px;
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            input{
+                width: 90%;
+                height: 85%;
+                margin-top: 3px;
+                font-size: 20px;
+                border: none;
+                
+            }
+            input::placeholder{
+                color: hsl(223, 100%, 88%);
+                font-weight: lighter;
+            }
+            textarea:focus, input:focus{
+                outline: none;
+            }   
+        }
+        
+        button{
+            border: none;
+            border-radius:55px;
+            margin-top: 10px;
+            width: 400px;
+            height: 50px;
+            font-size: 16px;
+            text-align: center;
+            color: white;
+            background: hsl(223, 87%, 63%);
+            cursor: pointer;
+            transition: all .7s ease;
+        }
+        button:focus{outline: none;}
+        button:hover{
+            box-shadow: 0px 6px 26px -6px rgba(168,227,255,1);
+            transition: all .7s ease;
+        }
+    }
+    .illustration{
+        width: 100%;
+        height: 500px;
+        background: white;
+        display: flex;
+        justify-content: center;
+        img{
+            width: auto;
+            height: 300px;
+        }
+    }
+    .bottom{
+        width: 100%;
+        height: 200px;
+        background: white;
+        color: grey;
+        .social-cont{
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            .social{
+                width: 50%;
+                height: 100%;
+                display: flex;
+                align-content: center;
+                justify-content: space-between;
+            }
+        }
+    }
+    .socio{
+        width: 50px;
+        height: 50px;
+        background: white;
+        margin-top: 30px;
+        border-radius: 55px;
+        border: 1px solid hsl(223, 100%, 88%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: hsl(223, 87%, 63%);
+    }
+.copy{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+.input-container{
+    background: black;
+    width: 100%;
+    height: 200px;
+}
+#error{
+    display: none;
+    font-size: 15px;
+    margin-left: 40px;
+    background: rgba(248, 0, 0, 0.281);
+    width: 80%;
+    height: 20px; 
+    border-radius: 3px;
+    margin-top: 10px;
+    text-align: center;
+    
+    span{
+        color: red;
+    } 
+}
+#error2{
+    display: none;
+    font-size: 15px;
+    margin-left: 40px;
+    background: rgba(248, 0, 0, 0.281);
+    width: 80%;
+    height: 20px; 
+    border-radius: 3px;
+    margin-top: 10px;
+    text-align: center;
+    
+    span{
+        color: red;
+    } 
+}
+@media(min-width:850px){
+    .illustration{
+        height: 600px;
+        img{
+            width: auto;
+            height: 450px;
+        }
+    }
+}
+@media(min-width:1050px){
+    .illustration{
+        img{
+            width: auto;
+            height: 500px;
+        }
+    }
+}
+@media(max-width:414px){
+    .illustration{
+        height: 300px;
+        img{
+            width: auto;
+            height: 200px;
+        }
+    }
+}
+@media(max-width:375px){
+    .illustration{
+        height: 300px;
+        img{
+            width: auto;
+            height: 200px;
+        }
+    }
+    .header{
+        h1{
+            font-size: 20px;
+        }
+    }
+    .input{
+        width: 200px;
+        height: 40px;
+        input{
+            width: 100%;
+        }
+    }
+}
